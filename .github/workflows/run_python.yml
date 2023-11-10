@@ -1,0 +1,11 @@
+name: Basic Python Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a python script
+        run: |
+            pip install -r wandb_cicd/requirements.txt
+            python wandb_cicd/ci.py
