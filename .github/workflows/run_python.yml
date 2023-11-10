@@ -6,6 +6,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run a python script
-        run: |
-            pip install -r wandb_cicd/requirements.txt
-            python wandb_cicd/ci.py
+      run: |
+        pip install -r wandb_cicd/requirements.txt
+        python wandb_cicd/ci.py
